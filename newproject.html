@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnX - Online Learning Platform</title>
+
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --dark: #1f2937;
+            --light: #f9fafb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: var(--light);
+            color: var(--dark);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: white;
+        }
+
+        .navbar a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--dark);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: var(--primary);
+            color: white;
+        }
+
+        .hero button {
+            padding: 12px 25px;
+            margin-top: 20px;
+            border: none;
+            background: white;
+            color: var(--primary);
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 60px 40px;
+        }
+
+        .course-grid,
+        .instructor-grid,
+        .price-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .course-card,
+        .instructor-card,
+        .price-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .price-card.highlight {
+            border: 2px solid var(--primary);
+        }
+
+        .testimonials {
+            background: #e0e7ff;
+            text-align: center;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact input,
+        .contact textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: white;
+        }
+    </style>
+
+</head>
+<body>
+
+<header class="navbar">
+    <h1 class="logo">LearnX</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Instructors</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Upgrade Your Skills Online</h2>
+    <p>Learn industry-ready skills from experts</p>
+    <button>Explore Courses</button>
+</section>
+
+<section class="courses">
+    <h2>Popular Courses</h2>
+    <div class="course-grid">
+        <div class="course-card">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript</p>
+            <span>₹1999</span>
+        </div>
+        <div class="course-card">
+            <h3>Data Science</h3>
+            <p>Python, NumPy, Pandas</p>
+            <span>₹2499</span>
+        </div>
+        <div class="course-card">
+            <h3>Machine Learning</h3>
+            <p>ML Algorithms & Projects</p>
+            <span>₹2999</span>
+        </div>
+    </div>
+</section>
+
+<section class="instructors">
+    <h2>Our Instructors</h2>
+    <div class="instructor-grid">
+        <div class="instructor-card">
+            <h3>Dr. Kumar</h3>
+            <p>AI Specialist</p>
+        </div>
+        <div class="instructor-card">
+            <h3>Ms. Priya</h3>
+            <p>Web Developer</p>
+        </div>
+        <div class="instructor-card">
+            <h3>Mr. Rahul</h3>
+            <p>Data Analyst</p>
+        </div>
+    </div>
+</section>
+
+<section class="pricing">
+    <h2>Pricing Plans</h2>
+    <div class="price-grid">
+        <div class="price-card">
+            <h3>Basic</h3>
+            <p>₹999 / month</p>
+        </div>
+        <div class="price-card highlight">
+            <h3>Pro</h3>
+            <p>₹1999 / month</p>
+        </div>
+        <div class="price-card">
+            <h3>Premium</h3>
+            <p>₹2999 / month</p>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>Student Reviews</h2>
+    <p>“LearnX helped me crack my first job!” – Ankit</p>
+    <p>“Best platform for beginners.” – Sneha</p>
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 LearnX. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
